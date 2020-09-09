@@ -1,0 +1,50 @@
+# Create a table
+
+create table TABLENAME (
+  COLUMN1 datatype,
+  COLUMN2 datatype,
+  COLUMN3 datatype,
+    ...
+  ):
+
+# TEST table with two columns- ID of type integer and Name of type varchar
+
+create table TEST (
+  ID integer,
+  NAME varchar(30)
+  ):
+
+
+# Table called COUNTRY with an ID column, a two letter country code column, and a variable country name column:
+
+create table COUNTRY (
+  ID integer,
+  CCODE integer,
+  Name varchar(60)
+  ):
+
+
+#Sometime, additional key in COUNTRY
+
+create table COUNTRY (
+  ID int NOT NULL,
+  CCODE integer,
+  Name varchar(60),
+  PRIMARY KEY (ID)
+  ):
+
+
+# In the above example, the ID column has the 'NOT NULL' constraint added after the datatype- meaning that it cannot contain a NULL or an empty value.
+
+
+
+
+# Time to drop the already existing Table and add a new one
+
+drop table COUNTRY;
+create table COUNTRY (
+   ID integer PRIMARY KEY NOT NULL,
+   CCODE char(2),
+   NAME varchar(60)
+   ):
+)
