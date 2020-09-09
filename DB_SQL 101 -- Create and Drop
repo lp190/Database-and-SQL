@@ -20,7 +20,7 @@ create table TEST (
 create table COUNTRY (
   ID integer,
   CCODE integer,
-  Name varchar(60)
+  NAME varchar(60)
   ):
 
 
@@ -29,7 +29,7 @@ create table COUNTRY (
 create table COUNTRY (
   ID int NOT NULL,
   CCODE integer,
-  Name varchar(60),
+  NAME varchar(60),
   PRIMARY KEY (ID)
   ):
 
